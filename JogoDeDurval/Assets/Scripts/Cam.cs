@@ -6,8 +6,7 @@ public class Cam : MonoBehaviour
 {
     private Transform player;
     public float smooth;
-    
-   
+
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -15,7 +14,7 @@ public class Cam : MonoBehaviour
 
     void LateUpdate()
     {
-        if (player.transform.position.x >= 0)
+        if (player.transform.position.x >= 0 && player.transform.position.x <= 6)
         {
             Vector3 following = new Vector3(player.position.x, transform.position.y, transform.position.z);
             transform.position = Vector3.Lerp(transform.position, following, smooth * Time.deltaTime);
