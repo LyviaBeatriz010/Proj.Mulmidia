@@ -27,7 +27,6 @@ public class Player : MonoBehaviour
 
     public AudioClip clip;
     public AudioClip clip2;
-    public AudioClip clip3;
 
     private AudioSource source;
     private SpriteRenderer sprite;
@@ -40,11 +39,7 @@ public class Player : MonoBehaviour
         TryGetComponent(out source);
         TryGetComponent(out sprite);
 
-        GameController.instance.UpdateLives(health);
-
-        source.volume = 0.400f;
-        source.pitch = 1;
-        source.PlayOneShot(clip3);
+        //GameController.instance.UpdateLives(health);
     }
 
     // Update is called once per frame
@@ -52,10 +47,13 @@ public class Player : MonoBehaviour
     {
         Jump();
         BowFire();
+        
+        /*
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             Dash();
         }
+        */
     }
 
     void FixedUpdate()
@@ -160,6 +158,7 @@ public class Player : MonoBehaviour
         }
     }
 
+    /*
     void Dash()
     {
         if (powerUpDash)
@@ -170,7 +169,7 @@ public class Player : MonoBehaviour
             }
         }
     }
-
+    
     IEnumerator ExecucaoDash()
     {
         isDash = true;
@@ -182,6 +181,7 @@ public class Player : MonoBehaviour
         anim.SetInteger("transition", 0);
         isDash = false;
     }
+    */
 
     public void Atirar()
     {
@@ -198,7 +198,8 @@ public class Player : MonoBehaviour
         }
 
     }
-
+    
+    /*
     public void Damage(int dmg)
     {
         health -= dmg;
@@ -217,6 +218,7 @@ public class Player : MonoBehaviour
     {
         sprite.color = Color.white;
     }
+    */
 
     private void OnCollisionEnter2D(Collision2D coll)
     {
@@ -225,12 +227,16 @@ public class Player : MonoBehaviour
             isJumping = false;
             isDoubleJump = false;
         }
+        
+        /*
         if (coll.gameObject.CompareTag("Boss"))
         {
             Damage(2);
         }
+        */
     }
-
+    
+    /*
     private void OnTriggerEnter2D(Collider2D coll)
     {
         if (coll.gameObject.CompareTag("BolaDeFogo"))
@@ -238,4 +244,5 @@ public class Player : MonoBehaviour
             Damage(2);
         }
     }
+    */
 }

@@ -28,6 +28,7 @@ public class Bow : MonoBehaviour
             rig.velocity = Vector2.left * speed;
         }
     }
+    /*
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Boss"))
@@ -35,4 +36,5 @@ public class Bow : MonoBehaviour
             Destroy(gameObject, 0.1f);
         }
     }
+    */
 }
