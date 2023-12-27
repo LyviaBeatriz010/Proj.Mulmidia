@@ -33,7 +33,7 @@ public class Bow : MonoBehaviour
     {
         if (other.gameObject.tag == "Enemy")
         {
-            other.GetComponent<Enemy>().Damage();
+            other.GetComponent<Enemy>().Damage(1);
         }
     }
     

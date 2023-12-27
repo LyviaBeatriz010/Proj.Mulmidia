@@ -13,6 +13,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Bow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Cam.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Coin.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -78,7 +79,7 @@
       <workItem from="1701889398852" duration="4318000" />
       <workItem from="1702400622220" duration="292000" />
       <workItem from="1702493410004" duration="4298000" />
-      <workItem from="1703703757528" duration="1895000" />
+      <workItem from="1703703757528" duration="4931000" />
     </task>
     <servers />
   </component>

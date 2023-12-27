@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
     public float speed;
     public float walkTime;
     private float timer;
+    public int vida = 4;
     
     private bool walkRight;
 
@@ -43,8 +44,14 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    public void Damage()
+    public void Damage(int dmg)
     {
+        vida -= dmg;
         anim.SetTrigger("hit");
+
+        if (vida <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 }
