@@ -13,7 +13,7 @@ public class Bow : MonoBehaviour
     void Start()
     {
         rig = GetComponent<Rigidbody2D>();
-        Destroy(gameObject, 2f);
+        Destroy(gameObject, 0.5f);
     }
 
     // Update is called once per frame
@@ -28,13 +28,13 @@ public class Bow : MonoBehaviour
             rig.velocity = Vector2.left * speed;
         }
     }
-    /*
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Boss"))
+        if (other.gameObject.tag == "Enemy")
         {
-            Destroy(gameObject, 0.1f);
+            other.GetComponent<Enemy>().Damage();
         }
     }
-    */
+    
 }
