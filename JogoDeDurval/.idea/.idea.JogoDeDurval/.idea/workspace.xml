@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb630634-7741-434b-b633-dcfc5ae91920" name="Changes" comment="" />
+    <list default="true" id="bb630634-7741-434b-b633-dcfc5ae91920" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.JogoDeDurval/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JogoDeDurval/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Enemy/Enemy_walk.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Enemy/Enemy_walk.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Coin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Coin.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -80,6 +87,7 @@
       <workItem from="1702400622220" duration="292000" />
       <workItem from="1702493410004" duration="4298000" />
       <workItem from="1703703757528" duration="4931000" />
+      <workItem from="1703790348892" duration="1071000" />
     </task>
     <servers />
   </component>

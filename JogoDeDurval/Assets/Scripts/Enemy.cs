@@ -20,7 +20,7 @@ public class Enemy : MonoBehaviour
         rig = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
+    /*
     void FixedUpdate()
     {
         timer += Time.deltaTime;
@@ -43,6 +43,7 @@ public class Enemy : MonoBehaviour
             rig.velocity = Vector2.left * speed;
         }
     }
+    */
 
     public void Damage(int dmg)
     {

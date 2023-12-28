@@ -27,6 +27,7 @@ public class Player : MonoBehaviour
 
     public AudioClip clip;
     public AudioClip clip2;
+    public AudioClip clip3;
 
     private AudioSource source;
     private SpriteRenderer sprite;
@@ -150,6 +151,7 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             isFire = true;
+            source.PlayOneShot(clip3);
             anim.SetInteger("transition", 3);
 
             yield return new WaitForSeconds(0.4f);
