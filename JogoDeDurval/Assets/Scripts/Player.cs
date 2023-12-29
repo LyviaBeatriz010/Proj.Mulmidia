@@ -151,7 +151,6 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             isFire = true;
-            source.PlayOneShot(clip3);
             anim.SetInteger("transition", 3);
 
             yield return new WaitForSeconds(0.4f);
@@ -247,4 +246,9 @@ public class Player : MonoBehaviour
         }
     }
     */
+
+    public void AtaqueSom()
+    {
+        source.PlayOneShot(clip3);
+    }
 }
